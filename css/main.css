@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#allbody{
+    height: 1500px;
+    background: white;
+}
+
+
+/* navigation bar */
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+nav.navbar{
+	background-color: rgba(255, 255, 255, 0.2);
+	-webkit-transition: all 0.4s ease!important;
+	transition: all 0.4s ease!important;
+}
+.navbar ul li a {
+	margin: 10px 15px!important;
+}
+.navbar.px-2 {
+    padding-right: 35px!important;
+    padding-left: 35px!important;
+}
+.navbar-nav ul li a{
+    float: right!important;
+    text-align: left;
+}
+.navbar.shrink{
+    background: rgba(255, 255, 255,0.97)!important;
+    padding: 10px!important;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+  .navbar.shrink .navbar-nav ul li a{
+    padding: 0px!important;
+}
+  .navbar ul li a:hover {
+    background: rgba(218, 224, 226,0.2);
+	border-radius: 30px;
+	color:black;
+    text-shadow:0 3px 6px rgba(255, 255, 255, 0.50), 0 3px 6px rgba(255, 255, 255, 0.75);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.20);
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+}
+.navbar ul li a{
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+}
+.nav-item.active a,.nav-item.active a:hover{
+    background: rgba(218, 224, 226,1);
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.20);
+}
+.nav-item.active .nav-link{
+    color: #2C3335;
+}
+
+
+
+
+/* slider */
+.carousel .carousel-inner .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+.carousel .carousel-inner .carousel-caption h5{
+    font-size: 35pt;
+    font-weight: bolder;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),0px 8px 13px rgba(0,0,0,0.1),0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/*Display mobile caption*/
+@media screen and (max-width: 699px) {
+    .carousel .carousel-inner .carousel-caption h5{
+        font-size: 28pt;
+        font-weight: bold;
+    }
+}
+
+.carousel .carousel-inner .carousel-item{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width:100%;
+    height:420px;
+           
+}
+
+.carousel .carousel-inner .carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.85);
+
+}
