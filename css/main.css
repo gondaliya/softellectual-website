@@ -126,6 +126,7 @@ nav.navbar{
     padding: 50px 25px;   
 }
 #about .cls1{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 30px;
 }
 #about .cls2{
@@ -136,9 +137,7 @@ nav.navbar{
 
 #about .container img{
     border-radius: 30px;
-    margin: auto;    
-    display: block;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
 }
 
 #about ul{
