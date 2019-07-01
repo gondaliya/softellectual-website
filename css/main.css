@@ -207,11 +207,11 @@ nav.navbar{
     text-shadow: 3px 3px 0px #ddcece, 4px 4px 0px rgba(0, 0, 0, 0.2);
 } 
 
-.card:hover {
+#services .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.card {
+#services .card {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     padding: 16px;
@@ -234,36 +234,133 @@ nav.navbar{
     margin: 1em 0; padding: 0
 }
 
-.card.web-dev{
+#services .card.web-dev{
     background-image: url("/img/web-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken; 
 }
-.card.android-dev{
+#services .card.android-dev{
     background-image: url("/img/android-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
-.card.ios-dev{
+#services .card.ios-dev{
     background-image: url("/img/ios-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
-.card.ecom-dev{
+#services .card.ecom-dev{
     background-image: url("/img/ecom-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
-.card.seo-dev{
+#services .card.seo-dev{
     background-image: url("/img/seo-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
-.card.dig-dev{
+#services .card.dig-dev{
     background-image: url("/img/dig-dev.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
 
 
+/**************************** contact us form ******************************/
 
+@media screen and (max-width: 699px) {
+    .contact-image svg{
+        height: 70px!important;
+        width: 70px!important;
+        margin-top: -35px!important;
+    }
+    #cont-us{
+        padding: 50px 10px!important;
+        margin: 0px;    
+        background: whitesmoke;
+    }
+    .contact-form form{
+        padding: 35px 3px!important;
+    }
+}
+#cont-us{
+    padding: 0% 20%;
+    padding-top: 9%;
+    padding-bottom: 5%;
+    margin: 0px;    
+    background: whitesmoke;
+}
+.contact-form{
+    background: #fff;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 70%;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);	
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image svg{
+    border-radius: 3rem;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 15px 0px;
+    margin-top: -45px;
+    background-size: 20 20;
+    background-color: whitesmoke;
+}
+.contact-image svg path.cont{
+    fill: #2c2c2c;
+}
+.contact-form form{
+    padding: 90px 20px;
+}
+.contact-form form .row{
+    margin-bottom: -6%;
+}
+.contact-form h3{
+    margin-bottom: 45px;
+    margin-top: -7%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+#cont-us .focus .inputText {
+	transform: translateY(-30px);
+	font-size: 16px;
+	opacity: 1;
+	color: #0062cc;
+}
+#cont-us .inputText {
+	position: absolute;
+    line-height: 35px;
+    margin:0px 10px;
+	font-size: 14px;
+	transition: .5s;
+	opacity: .5;
+}
+#cont-us .allinp{
+    padding: 6px;
+}
