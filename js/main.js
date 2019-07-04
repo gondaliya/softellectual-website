@@ -24,3 +24,7 @@ $(document).ready(function () {
     $(".cusinp").parent().addClass("focus");
   }
 });
+
+$(".ttlfld").click(function(){
+  $(this).siblings().focus();
+})
